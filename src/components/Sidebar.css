@@ -1,0 +1,49 @@
+/* Sidebar.css */
+.sidebar-container {
+    width: 100%;
+    max-width: 300px;
+    background-color: #130F0C;
+    color: white;
+    z-index: 10;
+    overflow-x: hidden;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .sidebar-open {
+    width: 250px;
+  }
+  
+  .sidebar-closed {
+    width: 0;
+  }
+  
+  .sidebar-toggle .fa-bars,
+  .sidebar-toggle .fa-times {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sidebar-toggle:hover .fa-bars,
+  .sidebar-toggle:hover .fa-times {
+    transform: scale(1.2);
+  }
+  
+  .rotate-image {
+    transform: rotate(90deg);
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 640px) {
+    .sidebar-container {
+      max-width: 200px;
+    }
+  
+    .sidebar-open {
+      width: 200px;
+    }
+  
+    .rotate-image {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
